@@ -13,12 +13,18 @@ Selected work:
 
 Stats & activity
 
-![GitHub Metrics](./metrics.svg)
+<div align="center">
+  <img src="./metrics.svg" alt="GitHub Metrics" />
+</div>
 
 Featured repositories
 
-![Repositories](./metrics.repositories.svg)
+<div align="center">
+  <img src="./metrics.repositories.svg" alt="Repositories" />
+</div>
 
 Languages
 
-![Top Languages](./metrics.languages.svg)
+<div align="center">
+  <img src="./metrics.languages.svg" alt="Top Languages" />
+</div>
