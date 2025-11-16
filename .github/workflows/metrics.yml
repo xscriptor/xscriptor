@@ -1,0 +1,54 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  actions:r read
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: General stats
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: xScriptor
+          base: header, activity, community, repositories
+          config_order: base.header, base.activity+community, base.repositories
+          output_action: commit
+          committer_message: "chore: update metrics"
+
+      - name: Repositories (featured & pinned)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.repositories.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: xScriptor
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_featured: xscriptordev/vscode, xscriptor/xw11-taskbar
+          plugin_repositories_pinned: 6
+          output_action: commit
+          committer_message: "chore: update metrics (repositories)"
+
+      - name: Languages (most used)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: xScriptor
+          base: ""
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_limit: 8
+          output_action: commit
+          committer_message: "chore: update metrics (languages)"
