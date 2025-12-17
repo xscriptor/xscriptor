@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="254.30934426053653" height="8" fill="#00B4AB"/>
-                    <rect mask="url(#languages-bar)" x="254.30934426053653" y="0" width="51.57768647937383" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="305.88703073991036" y="0" width="48.9460040261881" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="354.8330347660985" y="0" width="40.38152244260179" height="8" fill="#f34b7d"/>
-                    <rect mask="url(#languages-bar)" x="395.2145572087002" y="0" width="32.07362989820109" height="8" fill="#DA3434"/>
-                    <rect mask="url(#languages-bar)" x="427.2881871069014" y="0" width="24.264112218372432" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="451.5522993252738" y="0" width="4.2254951388963375" height="8" fill="#663399"/>
-                    <rect mask="url(#languages-bar)" x="455.77779446417014" y="0" width="4.222205535829856" height="8" fill="#F05138"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="267.4349014638475" height="8" fill="#00B4AB"/>
+                    <rect mask="url(#languages-bar)" x="267.4349014638475" y="0" width="54.239743102845345" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="321.67464456669285" y="0" width="50.53127925908936" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="372.20592382578224" y="0" width="42.46571633771147" height="8" fill="#f34b7d"/>
+                    <rect mask="url(#languages-bar)" x="414.67164016349363" y="0" width="33.729032161026986" height="8" fill="#DA3434"/>
+                    <rect mask="url(#languages-bar)" x="448.40067232452066" y="0" width="4.440124387556732" height="8" fill="#F05138"/>
+                    <rect mask="url(#languages-bar)" x="452.84079671207735" y="0" width="3.6029525123804724" height="8" fill="#012456"/>
+                    <rect mask="url(#languages-bar)" x="456.4437492244578" y="0" width="3.5562507755421273" height="8" fill="#663399"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -63,21 +63,21 @@
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                            <path fill="#F05138" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
-                        TypeScript
+                        Swift
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#012456" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        PowerShell
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path fill="#663399" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         CSS
-                    </div>
-                    <div class="field center no-wrap language">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#F05138" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                        </svg>
-                        Swift
                     </div>
                 </div>
             </section>
