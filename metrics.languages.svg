@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="260.4807301414063" height="8" fill="#00B4AB"/>
-                    <rect mask="url(#languages-bar)" x="260.4807301414063" y="0" width="61.21753716447592" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="321.6982673058822" y="0" width="52.829334573675204" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="374.52760187955744" y="0" width="41.36147053760763" height="8" fill="#f34b7d"/>
-                    <rect mask="url(#languages-bar)" x="415.88907241716504" y="0" width="32.851968371282176" height="8" fill="#DA3434"/>
-                    <rect mask="url(#languages-bar)" x="448.74104078844726" y="0" width="4.324666810722121" height="8" fill="#F05138"/>
-                    <rect mask="url(#languages-bar)" x="453.0657075991694" y="0" width="3.5092641085836296" height="8" fill="#012456"/>
-                    <rect mask="url(#languages-bar)" x="456.57497170775304" y="0" width="3.4250282922470086" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="277.73198533288036" height="8" fill="#00B4AB"/>
+                    <rect mask="url(#languages-bar)" x="277.73198533288036" y="0" width="65.27188450619526" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="343.0038698390756" y="0" width="44.10077982529102" height="8" fill="#f34b7d"/>
+                    <rect mask="url(#languages-bar)" x="387.10464966436666" y="0" width="35.02770586099038" height="8" fill="#DA3434"/>
+                    <rect mask="url(#languages-bar)" x="422.13235552535707" y="0" width="27.044981509901085" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="449.1773370352581" y="0" width="4.611083125392939" height="8" fill="#F05138"/>
+                    <rect mask="url(#languages-bar)" x="453.78842016065107" y="0" width="3.6518628725842794" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="457.4402830332354" y="0" width="2.5597169667646815" height="8" fill="#555555"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -45,12 +45,6 @@
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#89e051" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                        </svg>
-                        Shell
-                    </div>
-                    <div class="field center no-wrap language">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path fill="#f34b7d" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         C++
@@ -63,21 +57,27 @@
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#89e051" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        Shell
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path fill="#F05138" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         Swift
                     </div>
                     <div class="field center no-wrap language">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                            <path fill="#012456" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
-                        </svg>
-                        PowerShell
-                    </div>
-                    <div class="field center no-wrap language">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                             <path fill="#663399" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                         </svg>
                         CSS
+                    </div>
+                    <div class="field center no-wrap language">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="#555555" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                        </svg>
+                        C
                     </div>
                 </div>
             </section>
