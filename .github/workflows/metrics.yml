@@ -20,8 +20,20 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           user: xScriptor
-          base: header, activity, community, repositories
-          config_order: base.header, base.activity+community, base.repositories
+          base: header, activity, community, repositories, metadata
+          config_order: base.header, base.activity+community, base.repositories, base.metadata
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_facts: yes
+          plugin_habits_days: 14
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
           output_action: commit
           committer_message: "chore: update metrics"
 
@@ -36,8 +48,22 @@ jobs:
           plugin_repositories: yes
           plugin_repositories_featured: xscriptordev/vscode, xscriptor/xw11-taskbar
           plugin_repositories_pinned: 6
+          plugin_repositories_order: featured, pinned, starred, random
           output_action: commit
           committer_message: "chore: update metrics (repositories)"
+
+      - name: Calendar (isometric)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: xScriptor
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          output_action: commit
+          committer_message: "chore: update metrics (calendar)"
 
       - name: Languages (most used)
         uses: lowlighter/metrics@latest
@@ -49,6 +75,8 @@ jobs:
           base: ""
           plugin_languages: yes
           plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
+          plugin_languages_analysis_timeout: 15
           output_action: commit
           committer_message: "chore: update metrics (languages)"
