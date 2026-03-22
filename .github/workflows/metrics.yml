@@ -47,7 +47,7 @@ jobs:
           user: xScriptor
           base: ""
           plugin_repositories: yes
-          plugin_repositories_featured: xscriptordev/vscode, xscriptor/xw11-taskbar
+          plugin_repositories_featured: xscriptor/vscode, xscriptor/terminal
           plugin_repositories_pinned: 6
           plugin_repositories_order: featured, pinned, starred, random
           output_action: commit

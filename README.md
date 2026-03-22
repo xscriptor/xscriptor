@@ -6,12 +6,12 @@ Minimal tools. Clear interfaces. Craft over noise.
 - Focus: editor UX, customization ecosystems, and security-minded apps.
 
 Selected work:
-- VSCode customization suite — Themes, Xglass, UI mods: https://github.com/xscriptordev/vscode
-- Terminal customization suite — Alacritty, Kitty, ghostty, powershell, iterm etc. : https://github.com/xscriptordev/terminal
-- Jetbrains plugin — X theme: https://github.com/xscriptordev/jetbrains
+- VSCode customization suite — Themes, Xglass, UI mods: https://github.com/xscriptor/vscode
+- Terminal customization suite — Alacritty, Kitty, ghostty, powershell, iterm etc. : https://github.com/xscriptor/terminal
+- Jetbrains plugin — X theme: https://github.com/xscriptor/jetbrains
 - X — Arch Based Distro: https://github.com/xscriptor/x-linux
-- Xscriptor Obsidian Theme: https://github.com/xscriptordev/obsidian
-- Xfetch — System information tool: https://github.com/xscriptordev/xfetch
+- Xscriptor Obsidian Theme: https://github.com/xscriptor/obsidian
+- Xfetch — System information tool: https://github.com/xscriptor/xfetch
 
 
 Stats & activity
