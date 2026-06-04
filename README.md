@@ -18,7 +18,7 @@
 
 </div>
 <em>
-For me, aesthetics and functionality go hand in hand. Whether it's an editor theme, a terminal scheme, a system tool, or an entire Linux distro, everything I create is crafted with absolute precision
+Aesthetics and functionality go hand in hand. Whether it's an editor theme, a terminal scheme, a system tool, or an entire Linux distro, everything I create is crafted with absolute precision
 </em>
 
 
@@ -59,9 +59,6 @@ For me, aesthetics and functionality go hand in hand. Whether it's an editor the
 
 ---
 
-
-
----
 
 <div align="center">
   <img src="./metrics.svg" alt="GitHub Metrics" width="600" />
