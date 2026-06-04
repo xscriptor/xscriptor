@@ -23,39 +23,22 @@ Aesthetics and functionality go hand in hand. Whether it's an editor theme, a te
 
 
 
-## Projects
+<h2>Projects</h2>
 
-### Editor & IDE Customization
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [VSCode](https://github.com/xscriptor/vscode) | Themes, Xglass transparency, UI mods & snippets for VSCode & forks (Cursor, VSCodium, Code-OSS, Trae, Antigravity) | ★ 15 |
-| [JetBrains](https://github.com/xscriptor/jetbrains) | Theme pack for IntelliJ, PyCharm, GoLand, CLion, Android Studio | ★ 5 |
-| [Nvim](https://github.com/xscriptor/nvim) | Neovim configuration and theme |
-
-### Terminal & Prompt
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [Terminal](https://github.com/xscriptor/terminal) | Cross-platform themes for Alacritty, Kitty, Ghostty, iTerm2, PowerShell, WezTerm, Warp, GNOME Terminal, Konsole, Termux & more. Ships with a [universal installer](https://github.com/xscriptor/terminal#universal-installer). | ★ 10 |
-| [Xfetch](https://github.com/xscriptor/xfetch) | Fast, lightweight system info fetcher written in Rust. Cross-platform (Linux, macOS, Windows). Plugin system & JSONC config. | ★ 13 |
-
-### Linux & Packaging
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [X Linux](https://github.com/xscriptor/x-linux) | Custom Arch Linux spin with clean branding, reproducible ISO builds, dedicated package repo, and WSL support. | ★ 5 |
-| [x-repo](https://github.com/xscriptor/x-repo) | X package repository — install X-specific tools via pacman |
-| [xpm](https://github.com/xscriptor/xpm) | X package manager |
-| [xpkg](https://github.com/xscriptor/xpkg) | X packaging tool for developers |
-
-### Other Projects
-
-| Project | Description | Stars |
-|---------|-------------|-------|
-| [Obsidian](https://github.com/xscriptor/obsidian) | Elegant Obsidian theme with EB Garamond typography, frosted-glass effects, light/dark modes | ★ 6 |
-| [Gitnapse](https://github.com/xscriptor/gitnapse) | GitHub-focused tools and automation |
-| [X Hyprland](https://github.com/xscriptor/hyprland) | Hyprland desktop environment config for productivity |
+<ul>
+  <li><a href="https://github.com/xscriptor/vscode"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/vscode-insiders.svg"> VSCode</a> — Themes, Xglass transparency, UI mods & snippets for VSCode & forks</li>
+  <li><a href="https://github.com/xscriptor/terminal"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/terminal-cmd.svg"> Terminal</a> — Cross-platform themes for Alacritty, Kitty, Ghostty, iTerm2, PowerShell, WezTerm, Warp, GNOME Terminal, Konsole, Termux & more</li>
+  <li><a href="https://github.com/xscriptor/xfetch"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/repo-fetch.svg"> Xfetch</a> — Fast system info fetcher written in Rust (Linux, macOS, Windows)</li>
+  <li><a href="https://github.com/xscriptor/jetbrains"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/layout-sidebar-right-off.svg"> JetBrains</a> — Theme pack for IntelliJ, PyCharm, GoLand, CLion, Android Studio</li>
+  <li><a href="https://github.com/xscriptor/x-linux"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/terminal-linux.svg"> X Linux</a> — Custom Arch Linux spin with ISO & WSL support</li>
+  <li><a href="https://github.com/xscriptor/obsidian"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/markdown.svg"> Obsidian</a> — Elegant Obsidian theme with EB Garamond typography</li>
+  <li><a href="https://github.com/xscriptor/nvim"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/file-code.svg"> Nvim</a> — Neovim configuration and theme</li>
+  <li><a href="https://github.com/xscriptor/x-repo"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/regex.svg"> x-repo</a> — X package repository</li>
+  <li><a href="https://github.com/xscriptor/xpm"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/terminal-bash.svg"> xpm</a> — X package manager</li>
+  <li><a href="https://github.com/xscriptor/xpkg"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/terminal-bash.svg"> xpkg</a> — X packaging tool for developers</li>
+  <li><a href="https://github.com/xscriptor/gitnapse"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/github-alt.svg"> Gitnapse</a> — GitHub-focused tools and automation</li>
+  <li><a href="https://github.com/xscriptor/hyprland"><img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/beaker.svg"> X Hyprland</a> — Hyprland desktop environment config</li>
+</ul>
 
 ---
 
