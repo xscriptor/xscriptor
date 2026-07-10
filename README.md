@@ -2,7 +2,7 @@
 -:--x@xscriptor---------> battery: 100% [Full]
 ```
 
-<h2 align="right"><img src="https://camo.githubusercontent.com/e561449055bb71b48ea04fc2f583b10fc5559bed37e531c0dfeb0d0734280ffc/68747470733a2f2f692e696d6775722e636f6d2f475669796f35312e676966" alt="Demo" data-canonical-src="https://i.imgur.com/GViyo51.gif" style="max-width: 10%; display: inline-block;" data-target="animated-image.originalImage"><em>Craft over noise<em><img src="https://camo.githubusercontent.com/e561449055bb71b48ea04fc2f583b10fc5559bed37e531c0dfeb0d0734280ffc/68747470733a2f2f692e696d6775722e636f6d2f475669796f35312e676966" alt="Demo" data-canonical-src="https://i.imgur.com/GViyo51.gif" style="max-width: 10%; display: inline-block;" data-target="animated-image.originalImage"></h2>
+<h2 align="right"><img src="https://camo.githubusercontent.com/e561449055bb71b48ea04fc2f583b10fc5559bed37e531c0dfeb0d0734280ffc/68747470733a2f2f692e696d6775722e636f6d2f475669796f35312e676966" alt="Demo" data-canonical-src="https://i.imgur.com/GViyo51.gif" width="100" data-target="animated-image.originalImage"><em>Craft over noise<em><img src="https://camo.githubusercontent.com/e561449055bb71b48ea04fc2f583b10fc5559bed37e531c0dfeb0d0734280ffc/68747470733a2f2f692e696d6775722e636f6d2f475669796f35312e676966" alt="Demo" data-canonical-src="https://i.imgur.com/GViyo51.gif" width="100" data-target="animated-image.originalImage"></h2>
 
 
 
