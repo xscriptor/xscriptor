@@ -1,25 +1,4 @@
-
-<div align="center">
-<h2>X <em>as dev</em> - craft over noise</h2>
-
-<a href="https://dev.xscriptor.com">
-  <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/verified-filled.svg" width="24" alt="Xdeveloper Web" />
-</a>
- & 
-<a href="https://art.xscriptor.com">
-  <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/heart-filled.svg" width="24" alt="X Art Page" />
-</a>
- & 
-<a href="https://www.xscriptor.com">
-  <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/quotes.svg" width="24" alt="Xscriptor web" />
-</a>
-
-<p align="center"><img src="https://raw.githubusercontent.com/xscriptor/xassets/main/xrepos/terminal/logo.svg" width="30" alt="Terminal Xscriptor logo" /></p>
-
-</div>
-<em>
-Aesthetics and functionality go hand in hand. Whether it's an editor theme, a terminal scheme, a system tool, or an entire Linux distro, everything I create is crafted with absolute precision
-</em>
+<img src="https://camo.githubusercontent.com/e561449055bb71b48ea04fc2f583b10fc5559bed37e531c0dfeb0d0734280ffc/68747470733a2f2f692e696d6775722e636f6d2f475669796f35312e676966" alt="Demo" data-canonical-src="https://i.imgur.com/GViyo51.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage">
 
 
 
@@ -44,7 +23,7 @@ Aesthetics and functionality go hand in hand. Whether it's an editor theme, a te
 
 
 <div align="center">
-  <img src="./metrics.svg" alt="GitHub Metrics" width="600" />
+  <img src="./metrics.svg" alt="GitHub Metrics" width="300" />
 </div>
 
 <br>
@@ -59,5 +38,21 @@ Aesthetics and functionality go hand in hand. Whether it's an editor theme, a te
 
 <div align="center">
   <img src="./metrics.languages.svg" alt="Top Languages" />
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://dev.xscriptor.com">
+    <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/verified-filled.svg" width="24" alt="Xdeveloper Web" />
+  </a>
+  &nbsp;
+  <a href="https://art.xscriptor.com">
+    <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/heart-filled.svg" width="24" alt="X Art Page" />
+  </a>
+  &nbsp;
+  <a href="https://www.xscriptor.com">
+    <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/quotes.svg" width="24" alt="Xscriptor web" />
+  </a>
 </div>
 
