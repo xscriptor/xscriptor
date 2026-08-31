@@ -1,8 +1,7 @@
-<img src="https://raw.githubusercontent.com/xscriptor/xassets/main/x/icon.svg" height="50" alt="Xscriptor as Dev logo">
+<img src="https://raw.githubusercontent.com/xscriptor/xscriptor/assets/x.gif" width="100%" alt="Xscriptor development">
 
 <div align="right">
   <em>
-    Más allá de los lenguajes, la determinación de consumar un propósito.
   </em>
 </div>
 
