@@ -1,13 +1,31 @@
-<img src="https://raw.githubusercontent.com/xscriptor/xscriptor/assets/x.gif" width="100%" alt="Xscriptor development">
-
 <div align="right">
   <em>
-  </em>
+    <strong>X</strong>
+  </em> scriptor
 </div>
+<img src="./assets/x.gif" width="100%" alt="Xscriptor development">
 
+
+```javascript
+const Xscriptor = {
+  user: "xscriptor",
+  lang: ["TypeScript", "JavaScript", "Rust", "Java", "Python", "HTML", "CSS"],
+  projects: [
+    "xlnux",
+    "gitnapse",
+    "xfetch-cli",
+    "xwebanalysis",
+    "xscriptor-colors",
+    "xscriptor-web",
+    "xscriptor-legacy",
+    "xscriptor-ai",
+    "T-Agencia"
+  ]
+};
+```
 
 <div align="center">
-  <img src="./metrics.svg" alt="GitHub Metrics" width="400" />
+  <img src="./metrics.svg" alt="GitHub Metrics" width="100%" />
 </div>
 
 <br>
