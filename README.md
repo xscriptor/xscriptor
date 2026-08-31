@@ -10,6 +10,7 @@
 const Xscriptor = {
   user: "xscriptor",
   lang: ["TypeScript", "JavaScript", "Rust", "Java", "Python", "CSS", "Bash", "PWS"],
+  Sokernel: ["X", "Linux", "Macos", "Windows"],
   projects: [
     "xlnux",
     "gitnapse",
@@ -24,6 +25,13 @@ const Xscriptor = {
 ```
 
 <em><strong>Craft over noise</strong></em>
+
+<div align="center">
+  <a href="https://xscriptor.com">writer</a> ·
+  <a href="https://xscriptor.io">developer</a> ·
+  <a href="https://xscriptor-colors.github.io/web/">colors</a> ·
+  <a href="https://xfetch-cli.github.io/web/">xfetch-cli</a>
+</div>
 
 <div align="center">
   <img src="./metrics.svg" alt="GitHub Metrics" />
