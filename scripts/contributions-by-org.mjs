@@ -129,11 +129,6 @@ const year = new Date().getFullYear();
 
 let svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${height}" viewBox="0 0 ${WIDTH} ${height}">
-  <defs>
-    <clipPath id="avatar-clip">
-      <circle cx="12" cy="12" r="12"/>
-    </clipPath>
-  </defs>
   <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${height - 1}" rx="6" fill="#ffffff" stroke="#e4e2e2"/>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
@@ -144,7 +139,7 @@ let svg = `
 rows.forEach((row, index) => {
   const y = HEADER + index * ROW_HEIGHT;
   if (row.avatar) {
-    svg += `<image x="${PADDING}" y="${y - 15}" width="24" height="24" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)" href="${row.avatar}"/>`;
+    svg += `<foreignObject x="${PADDING}" y="${y - 15}" width="24" height="24"><div xmlns="http://www.w3.org/1999/xhtml"><img style="width:24px;height:24px;border-radius:6px;object-fit:cover;display:block;margin:0" src="${row.avatar}"/></div></foreignObject>`;
     svg += `<text x="${PADDING + 34}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
   } else if (row.avatarUrl) {
     svg += `<circle cx="${PADDING + 12}" cy="${y - 3}" r="12" fill="${colorFromLogin(row.login)}"/>`;
