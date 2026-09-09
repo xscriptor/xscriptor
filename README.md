@@ -5,7 +5,6 @@
 </div>
 <img src="./assets/x.gif" width="100%" alt="Xscriptor development">
 
-
 ```javascript
 const Xscriptor = {
   user: "xscriptor",
@@ -35,27 +34,13 @@ const Xscriptor = {
 </div>
 
 <div align="center">
-  <img src="./metrics.svg" alt="GitHub Metrics" />
-</div>
-
-<br>
-
-<div align="center">
   <img src="./metrics.calendar.svg" alt="Calendar" />
 </div>
 
 <div align="center">
-  <img src="./metrics.repositories.svg" alt="Repositories" />
-</div>
-
-<div align="center">
-  <img src="./metrics.languages.svg" alt="Top Languages" />
+  <img src="./languages.orgs.svg" alt="Most Used Languages" />
 </div>
 
 <div align="center">
   <img src="./contributions.by-org.svg" alt="Commits by Organization" />
 </div>
-
-<br>
-
-

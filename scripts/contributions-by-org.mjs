@@ -140,15 +140,15 @@ rows.forEach((row, index) => {
   const y = HEADER + index * ROW_HEIGHT;
   if (row.avatar) {
     svg += `<foreignObject x="${PADDING}" y="${y - 15}" width="24" height="24"><div xmlns="http://www.w3.org/1999/xhtml"><img style="width:24px;height:24px;border-radius:6px;object-fit:cover;display:block;margin:0" src="${row.avatar}"/></div></foreignObject>`;
-    svg += `<text x="${PADDING + 34}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
+    svg += `<text x="${PADDING + 42}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
   } else if (row.avatarUrl) {
     svg += `<circle cx="${PADDING + 12}" cy="${y - 3}" r="12" fill="${colorFromLogin(row.login)}"/>`;
     svg += `<text x="${PADDING + 12}" y="${y + 1}" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">${esc(initials(row.login))}</text>`;
-    svg += `<text x="${PADDING + 34}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
+    svg += `<text x="${PADDING + 42}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
   } else {
     svg += `<text x="${PADDING}" y="${y}" font-size="14" font-style="italic" fill="#586069">${esc(row.login)}</text>`;
   }
-  svg += `<text x="${PADDING}" y="${y + 14}" font-size="10" fill="#959da5">${row.repositories} repo${row.repositories === 1 ? "" : "s"}</text>`;
+  svg += `<text x="${PADDING + 42}" y="${y + 14}" font-size="10" fill="#959da5">${row.repositories} repo${row.repositories === 1 ? "" : "s"}</text>`;
   svg += `<text x="${WIDTH - PADDING}" y="${y + 2}" text-anchor="end" font-size="14" font-weight="600" fill="#24292f">${short(row.count)}</text>`;
 });
 

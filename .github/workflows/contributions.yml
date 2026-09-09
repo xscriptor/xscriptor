@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  contributions:
+  render:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,12 +21,18 @@ jobs:
           TOKEN: ${{ secrets.METRICS_TOKEN }}
           LOGIN: xScriptor
 
+      - name: Render most used languages (organizations snapshot)
+        run: node scripts/languages-orgs.mjs
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+          LOGIN: xScriptor
+
       - name: Commit and push
         run: |
           git config user.name "xscriptor"
           git config user.email "xscriptor@users.noreply.github.com"
-          git add contributions.by-org.svg
+          git add contributions.by-org.svg languages.orgs.svg
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update contributions by organization"
+            git commit -m "chore: update contributions and languages cards"
             git push origin HEAD
           fi
