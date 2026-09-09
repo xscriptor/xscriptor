@@ -76,6 +76,35 @@ const PADDING = 18;
 const HEADER = 44;
 const VISIBLE = 12;
 
+const colorFromLogin = (login) => {
+  let hash = 0;
+  for (const char of login) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
+  return `hsl(${hash % 360} 60% 48%)`;
+};
+
+const initials = (login) =>
+  login
+    .split(/[^a-zA-Z0-9]/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase() || login.slice(0, 2).toUpperCase();
+
+const withAvatarSize = (url, size) => `${url}${url.includes("?") ? "&" : "?"}s=${size}`;
+
+const loadAvatar = async (row) => {
+  if (!row.avatarUrl) return;
+  try {
+    const response = await fetch(withAvatarSize(row.avatarUrl, 64));
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const buffer = Buffer.from(await response.arrayBuffer());
+    row.avatar = `data:${(response.headers.get("content-type") || "image/png").split(";")[0]};base64,${buffer.toString("base64")}`;
+  } catch {
+    row.avatar = null;
+  }
+};
+
 const rows = owners.slice(0, VISIBLE).map((owner) => ({
   login: owner.login,
   avatarUrl: owner.avatarUrl,
@@ -93,11 +122,18 @@ if (remaining.length > 0) {
   });
 }
 
+await Promise.all(rows.map(loadAvatar));
+
 const height = HEADER + rows.length * ROW_HEIGHT + 52;
 const year = new Date().getFullYear();
 
 let svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${height}" viewBox="0 0 ${WIDTH} ${height}">
+  <defs>
+    <clipPath id="avatar-clip">
+      <circle cx="12" cy="12" r="12"/>
+    </clipPath>
+  </defs>
   <rect x="0.5" y="0.5" width="${WIDTH - 1}" height="${height - 1}" rx="6" fill="#ffffff" stroke="#e4e2e2"/>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
@@ -107,8 +143,12 @@ let svg = `
 
 rows.forEach((row, index) => {
   const y = HEADER + index * ROW_HEIGHT;
-  if (row.avatarUrl) {
-    svg += `<image x="${PADDING}" y="${y - 15}" width="24" height="24" rx="6" clip-path="inset(0% round 6px)" href="${esc(row.avatarUrl)}"/>`;
+  if (row.avatar) {
+    svg += `<image x="${PADDING}" y="${y - 15}" width="24" height="24" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar-clip)" href="${row.avatar}"/>`;
+    svg += `<text x="${PADDING + 34}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
+  } else if (row.avatarUrl) {
+    svg += `<circle cx="${PADDING + 12}" cy="${y - 3}" r="12" fill="${colorFromLogin(row.login)}"/>`;
+    svg += `<text x="${PADDING + 12}" y="${y + 1}" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">${esc(initials(row.login))}</text>`;
     svg += `<text x="${PADDING + 34}" y="${y}" font-size="14" fill="#24292f">${esc(row.login)}</text>`;
   } else {
     svg += `<text x="${PADDING}" y="${y}" font-size="14" font-style="italic" fill="#586069">${esc(row.login)}</text>`;
