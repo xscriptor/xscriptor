@@ -30,7 +30,8 @@ const Xscriptor = {
   <a href="https://xscriptor.com">writer</a> ·
   <a href="https://xscriptor.io">developer</a> ·
   <a href="https://xscriptor-colors.github.io/web/">colors</a> ·
-  <a href="https://xfetch-cli.github.io/web/">xfetch-cli</a>
+  <a href="https://xfetch-cli.github.io/web/">xfetch-cli</a> ·
+  <a href="https://xtop-cli.github.io/web/">xtop-cli</a>
 </div>
 
 <div align="center">
@@ -49,6 +50,10 @@ const Xscriptor = {
 
 <div align="center">
   <img src="./metrics.languages.svg" alt="Top Languages" />
+</div>
+
+<div align="center">
+  <img src="./contributions.by-org.svg" alt="Commits by Organization" />
 </div>
 
 <br>

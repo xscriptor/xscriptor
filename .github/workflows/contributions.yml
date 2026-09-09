@@ -1,0 +1,32 @@
+name: Contributions by organization
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Render contributions by organization
+        run: node scripts/contributions-by-org.mjs
+        env:
+          TOKEN: ${{ secrets.METRICS_TOKEN }}
+          LOGIN: xScriptor
+
+      - name: Commit and push
+        run: |
+          git config user.name "xscriptor"
+          git config user.email "xscriptor@users.noreply.github.com"
+          git add contributions.by-org.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update contributions by organization"
+            git push origin HEAD
+          fi
